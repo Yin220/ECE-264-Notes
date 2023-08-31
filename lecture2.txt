@@ -1,0 +1,79 @@
+Selection Sort
+    - find the smallest among the elements that have not been sorted
+    - swap that element with the first among the unsorted elements
+    - the head would be sorted and the rest are not sorted and keep going
+
+array arr has n elements
+
+1. only goes to second last, because the last one needs no sorting
+
+
+
+
+void sort()
+{
+    
+    in val = arr[c1];
+    ind = c1;
+    for(c2=c1+1;c2<size;c2++)
+    {
+    #ifdef ASCENDING
+        if (val > arr[2])
+    #else
+        if (val < arr[2])
+    #endif    
+        {
+        val = arr[c2];
+        ind = c2;
+        }
+
+        if(ind != c1)
+        {
+            int v = arr[c1];
+            arr[c1] = val;
+            arr[ind] = v;
+
+        }
+
+
+    }
+
+
+}
+
+totally ordered Set
+a R b, b R c, and a R c
+*transitivity
+
+selection sort is faster than bubble sort
+
+
+quick sort
+
+
+
+memory in computers
+
+User Space (can be used by ordinary)
+- stack memory 
+    - follow first in last out
+    - stack
+        - means what comes first leaves last
+        - when a function is called, the line number after the calls is push to the stack
+        - global variables are considered harmful
+
+
+        value address
+
+
+- Heap memory ---- 
+- Program Memory ----
+
+Kernel Space (only operating system can use)
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+Lecture 1
+
+who gets the cake
+
+card shuffling
+    if split k cards, there are k-1 ways to split it
+    k cards would have k! combinations but some combination would be missings if only shuffle once
+
+sudoku
+    9x9 cells with 9 numbers
+    in a row, column, or 3x3 square, no number can repeat
+
+Huffman Compression
+    as the transmission of file is slow you have compress it.
+    1. lossless compression
+    2. lossy compression
+
+    more frequent characters should have fewer bits
+    ps: binary tree
+        at the bottom, use more bits
+        at the top, use fewer bits
+
+Mouse escaping a maze
+    
+
+
+write a program - using gcc
+
+gcc myprogram.c
+a.out
+
+gcc myprogram.c -o 
+
+makefile - 了解一下这是干嘛的
+use #ifdef MESSAGE - #ifdef 是干嘛的
+
+stdlib - define EXIT_FAILURE and EXIT_SUCCESS
+
+makefile is a tool in linux - how i want to build my file and how i want to test my program
+
+test coverage allows you to know which line of your program has not been used
+
+when compiling: a.c -> object file a.o -link> executable
+
+
+
+add.o:add.C
+
+$(gcc)$(TESTFLAGS) -c add.c (what does the TESTFLAGS mean and where it comes from)
+
+
+
+
+
+
+

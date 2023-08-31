@@ -1,0 +1,26 @@
+office hour: MSEE 222
+
+yunglu@purdue.edu
+
+9 to 10 A.M. MWF
+
+files, structures, dynamic data structures, recursion
+
+Write small pieces of codes and integrate them later
+ 
+github classroom
+
+two ways for obtaining bonus:
+1. ask/answer questions in piazza
+2. 
+
+To get an A: total 92 Assignment 50 Exam Score 25
+
+TEXTBOOK：intermidiete C programming (Purdue Library)
+
+conversation with chatGPT
+
+should commit as many times as possible
+
+commit -> push
+

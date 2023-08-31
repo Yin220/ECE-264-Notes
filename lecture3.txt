@@ -1,0 +1,41 @@
+Stack Memory
+store: 
+
+1. return location
+2. arguments
+3. local variables
+4. value address
+
+
+address are always different 
+computer only knows the addresses and symbols
+
+A function can see only its frame
+
+a pointer is variable storing address
+
+int t = 5;
+int * p = & t; //* means a pointer, & means get the address
+
+you can never change the address
+
+Pointer
+
+LHS - modify the value
+RHS - read the value at the address
+
+
+mean of *
+
+1. type *p =  ;create a pointer
+2. * p =   ;LHS
+3. int s = * p; RHS
+4. int t = 5 * 9;
+
+
+
+
+
+
+
+
