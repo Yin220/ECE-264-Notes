@@ -27,14 +27,20 @@ RHS - read the value at the address
 
 mean of *
 
-1. type *p =  ;create a pointer
-2. * p =   ;LHS
-3. int s = * p; RHS
+1. type *p =  ;     create a pointer
+2. * p =   ;        LHS
+3. int s = * p;     RHS
 4. int t = 5 * 9;
 
 
+Data Types
+    - specify the information and operations
+    - specify the amount of info in there
+    - people want to create new data types
 
+Don't mix up the integer   
 
+can't change address; only values; can't mix pointer with non-pointer
 
 
 
