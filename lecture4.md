@@ -1,77 +1,59 @@
-Learn gdb to debug (go to hotseat)
+# Debugging with GDB
 
-emacs is a text editor (vs code is fine)
+Learn to use GDB for debugging. If you need a quick reference, consider using a GDB cheat sheet.
 
-use file eliminate to test if it's an executable file
+## Launching GDB from a Text Editor
 
-To go to gdb from text editor, press escape and x, then type gdb
+- In Emacs: Press `Escape` followed by `x`, then type `gdb`.
+- Note: If you're using VS Code or another text editor, you might have different commands to launch GDB.
 
-P.S. you could use a gdb cheat sheet
+## GDB Commands
 
-GDB COMMAND
+- **b (breakpoint)**: Sets a breakpoint where the program will pause its execution.
+  - Example: `b eliminate.c:24`
+  - Use `info b` to display information about all breakpoints.
+- **bt**: Back trace — shows the call stack.
+  - `f 0` is the current frame.
+  - `f 1` is the calling frame.
+- **r**: Run specific file.
+- **c**: Continue execution until the next breakpoint.
+- **n**: Advance to the next line of code.
+- **display (variable)**: Monitor a variable's value without printing it.
+  - Use `delete display` to stop monitoring.
+- **print**: Evaluate and display the value of an expression.
+- **info**: Display various information about the debugging state.
+- **list**: Display source code.
+- **f**: Select a specific frame in the call stack.
 
-b - a break point, the program would stop at the break point, it would stop at that line but not executing it
-    b eliminate.c:24
-    info b - show the information of all the break points
+# C Files Syntax
 
-bt - back trace? what does it do? f 0 is current frame, and f 1 is who calls it
-     show the stack memory, solve recursion question
-
-r - run specific file
-
-c - continue, go to next breakpoint
-
-n - you go to next line
-
-display (variable) - it works like a print but not actual print it
-delete display - delete the display function
-
-print - similar to the print command in C
-
-info - get info
-
-lsit - show ten lines something?
-
-f - go to specific frame
-
-
-Files
-    
-Syntax:
-
-tydef struct
+```c
+typedef struct
 {
+    // structure contents
+} name;
 
-}(name)
-
-(name) v1; // create an example of that type
-
-create new data type is to
-    - organize the information better
-    - distinguish data types from an object
-    - improve consistency
-
-sizeof(type) - this would tell you the size of that data type
+name v1;  // create an instance of the type
+```
 
 
+# Homework Tips
 
-Homework tips
-- use ASCII
-- need to count the number of letters appeared
-- open the file
-    FILE * fptr = fopen(filename,"r")
-    if (fptr == NULL)
-    {
-        //do not fclose in here
-    }
-    int ch = fgetc(fptr); //if you do unsigned char, you could never reach/detect the end of the file since EOF is -1
+- Use ASCII encoding.
+- Count the number of occurrences of each letter.
+- Reading a file in C:
 
-grep - is to search this symbol in a file and output any line that includes the symbol
+  ```c
+  FILE *fptr = fopen(filename,"r");
+  if (fptr == NULL)
+  {
+      // Handle the error
+  }
+  int ch = fgetc(fptr);  // NOTE: Using unsigned char might cause issues with detecting EOF.
 
-file is like a river, the marker is upstream, as you read you go downstream.
 
-ftell - is a function that tells you where in the file.
-fseek - go to the specific location
+
+
 
 
 
